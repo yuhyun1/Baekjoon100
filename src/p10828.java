@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Stack;
 
-public class Main {
+public class p10828 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
