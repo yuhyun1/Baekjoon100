@@ -10,7 +10,6 @@ public class p16171 {
             if (!(str.charAt(i) - '0' >= 0 && str.charAt(i) - '0' <= 9))
                 s += str.charAt(i);
         }
-
         System.out.println(s.contains(find) ? 1 : 0);
     }
 }
