@@ -6,8 +6,7 @@ import java.util.HashSet;
 public class p5568 {
     static int n;
     static int k;
-    static int[] arr;
-    static int[] v;
+    static int[] arr, v;
     static boolean[] visit;
     static HashSet<Integer> set = new HashSet<>();
     public static void main(String[] args) throws IOException {
@@ -28,11 +27,11 @@ public class p5568 {
 
     public static void dfs(int depth) {
         if (depth == k) {
-            String sum = "";
-            for (int i = 0; i < v.length; i++) {
-                sum += v[i];
+            StringBuilder sum = new StringBuilder();
+            for (int j : v) {
+                sum.append(j);
             }
-            set.add(Integer.parseInt(sum));
+            set.add(Integer.parseInt(sum.toString()));
             return;
         }
         for (int i = 0; i < n; i++) {
