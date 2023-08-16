@@ -16,14 +16,14 @@ public class p20116 {
             x[i] = Integer.parseInt(st.nextToken());
         }
 
-        double[] sum = new double[n];
+        long[] sum = new long[n];
         sum[0] = x[0];
         for (int i = 1; i < n; i++) {
             sum[i] = sum[i - 1] + x[i];
         }
 
         for (int i = 0; i < n - 1; i++) {
-            double v = (sum[n - 1] - sum[i]) / (n -1 -i);
+            double v = (double)(sum[n - 1] - sum[i]) / (n -1 -i);
             if (v <= x[i] - l || v >= x[i] + l) {
                 System.out.print("unstable");
                 return;

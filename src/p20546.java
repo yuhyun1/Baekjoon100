@@ -12,7 +12,7 @@ public class p20546 {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
-
+        
         int timingstock = 0;
         int timingmoney = base;
         for (int i = 3; i < arr.length; i++) {
@@ -39,7 +39,6 @@ public class p20546 {
         }
         int b = (arr[13] * bnpstock) + bnpmoney;
 
-        System.out.println(t + " " + b);
         if (b < t) System.out.println("TIMING");
         else if (t < b) System.out.println("BNP");
         else System.out.println("SAMESAME");
