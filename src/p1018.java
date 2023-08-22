@@ -20,11 +20,7 @@ public class p1018 {
         for (int i = 0; i < n; i++) {
             String s = br.readLine();
             for (int j = 0; j < m; j++) {
-                if (s.charAt(j) == 'W') {
-                    board[i][j] = true;
-                } else {
-                    board[i][j] = false;
-                }
+                board[i][j] = (s.charAt(j) == 'W');
             }
         }
 
