@@ -21,7 +21,7 @@ public class p11047Better {
             if(coin[i] <= k) {
                 // 현재 가치의 동전으로 구성할 수 있는 개수를 더해준다.
                 count += (k / coin[i]);
-                k = k % coin[i];
+                k %= coin[i];
             }
         }
         System.out.println(count);
